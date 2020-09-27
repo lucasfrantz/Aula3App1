@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtTaxa"
+        android:layout_width="110dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="Ex: 0.02"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="@string/labelTaxa"
+        app:layout_constraintBottom_toTopOf="@+id/txtTaxa"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poupanca_logo"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/labelInicial"
+        app:layout_constraintBottom_toTopOf="@+id/txtInicial"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/txtInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/hintInicial"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <EditText
+        android:id="@+id/txtMensal"
+        android:layout_width="110dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Ex: 100.00"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/labelMensal"
+        app:layout_constraintBottom_toTopOf="@+id/txtMensal"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <EditText
+        android:id="@+id/txtTempo"
+        android:layout_width="103dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="@string/hintTime"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/labelTempo"
+        app:layout_constraintBottom_toTopOf="@+id/txtTempo"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="392dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/labelCalcular"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        tools:layout_editor_absoluteX="13dp"
+        android:background="#1167B1"/>
+
+    <EditText
+        android:id="@+id/txtFinal"
+        android:layout_width="388dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/labelTotal"
+        app:layout_constraintBottom_toTopOf="@+id/txtFinal"
+        tools:layout_editor_absoluteX="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

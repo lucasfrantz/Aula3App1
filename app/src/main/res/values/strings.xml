@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">Aula3App1</string>
+    <string name="labelInicial">Initial value:</string>
+    <string name="labelTaxa">Tax:</string>
+    <string name ="labelMensal">Monthly application:</string>
+    <string name="labelTempo">Application time:</string>
+    <string name="labelCalcular">Calculate</string>
+    <string name="labelTotal">Value at the end of the investment:</string>
+    <string name="hintInicial">Value in $. Ex: 1700.00</string>
+    <string name="hintTime">In months</string>
+    <string name="warning">Please fill al the texts above the button</string>
+</resources>
